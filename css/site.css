@@ -19,7 +19,15 @@ p {
     font-weight: 300;
   font-style: italic;
 }
-
+.bookpage {
+  padding:10%; 
+}
+.bookcover{
+  width: 240px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 .header {
     font-family: "Bebas Neue", "Raleway", Helvetica, Arial, sans-serif;
     font-size: 1.1em;
