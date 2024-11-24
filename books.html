@@ -17,7 +17,28 @@
 </head>
 
 <body>
-    <div class="bookpage">
+    <div>
+        <div class="w3-bar w3-black w3-padding-large header">
+            <a href="#" id="logo"></a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Space Grit</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small">Sci-Fi Rom</a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button w3-hide-small" style="letter-spacing: 0.0625em;">Paranormal<i class="fa fa-caret-down"></i></button>
+              <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+          </div>
+          <div id="mobile-menu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-left:10%">
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+          </div>
+
+    <div class="content bookpage">
         <div class="bookcover w3-left">
         <img id="cover240" src="covers/RecklessDragon2017_240.jpg" class="w3-round"/>
         </div>
@@ -50,13 +71,12 @@
 
 
         <p id="xpathname">Pathname</p>
-
+    </div>
+</div>
         <script>
             var xtitle = getTitle();
             document.getElementById("xpathname").innerHTML = xtitle;
             getText(xtitle);
 
         </script>
-
-    </div>
 </body>
