@@ -13,7 +13,6 @@ async function getText(xtitle) {
   document.getElementById("cover240").src = "covers/" + obj.books[i].cover240;
 }
 
-
 function getTitle(){
   var matches = /title=([^&#=]*)/.exec(window.location.search);
   var param1 = matches[1]
