@@ -20,8 +20,8 @@ p {
   font-style: italic;
 }
 .bookpage {
-  padding-top: .5%;
-  padding-left: .5%; 
+  padding-top: 10px;
+  padding-left: 10px; 
 }
 .bookcover{
   width: 240px;
