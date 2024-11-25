@@ -24,8 +24,8 @@ p {
   padding-left: 10px; 
 }
 .bookdetails p {
-  margin-top: 0 ;
-  margin-bottom: 0 ;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .bookcover{
   width: 240px;
