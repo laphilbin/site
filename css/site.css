@@ -33,6 +33,11 @@ p {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .bookcover {float: right;}
+}
 .header {
     font-family: "Bebas Neue", "Raleway", Helvetica, Arial, sans-serif;
     font-size: 1.1em;
