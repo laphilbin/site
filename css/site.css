@@ -5,7 +5,6 @@
     background: url(../images/Ella-logo-white.png) no-repeat center;
     display: block;
   }
-.mySlides {display:none;}
 body, h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", Helvetica, Arial, sans-serif;
   }
@@ -32,6 +31,18 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-right: 20px;
   margin-bottom: 20px;
+}
+.bookcard{
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Alegreya Sans", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.booktile{
+
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,77 +1,117 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>L.A. Philbin</title>
-        <link rel="stylesheet" href="css/w3.css">
-        <link rel="stylesheet" href="css/site.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-      </head>
-    
-  <body>
-    <div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L.A. Philbin</title>
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/color-theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div>
     <div class="w3-bar w3-black w3-padding-large header">
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Space Grit</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small">Sci-Fi Rom</a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button w3-hide-small" style="letter-spacing: 0.0625em;">Paranormal<i class="fa fa-caret-down"></i></button>
-          <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
-          </div>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Space Grit</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Sci-Fi Rom</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-hide-small" style="letter-spacing: 0.0625em;">Paranormal<i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
         </div>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
       </div>
-      <div id="mobile-menu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-left:10%">
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-      </div>
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxxlarge"><b>L. A. PHILBIN</b></h1>
-    <h6 class="contrast">also writing as <span class="w3-tag">ella drake</span></h6>
-  </header>
-
-      <div class="content w3-row-padding">
-        <div class="w3-col m6 s12">
-            <p>If you love science fiction romance, paranormal romance, or fantasy romance, this is the place for you.</p>
-        </div>
-        <div class="w3-col m6 s12">
-            <h4 class="bebas-neue-regular">Books by Theme</h4>
-            <p>All, Alien, Alternate Dimension, Biopunk, Demon, Dragon, Elementals, Fairytale, Post-Apocalyptic, Shifter, Space Opera, Space Western, Wolf</p>
-
-            <h4 class="bebas-neue-regular">Books by Genre</h4>
-        </div>
-      </div> 
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="myFunction()">&#9776;</a>
     </div>
-      <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-        function myFunction() {
-            var m = document.getElementById("mobile-menu");
-            if (m.className.indexOf("w3-show") == -1) {
-                m.className += " w3-show";
-            } else { 
-                m.className = m.className.replace(" w3-show", "");
-            }
-        }
-        </script>
-  </body>
+    <div id="mobile-menu" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" style="padding-left:10%">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+      <h1 class="w3-xxxlarge"><b>L. A. PHILBIN</b></h1>
+      <h6 class="contrast">also writing as <span class="w3-tag">ella drake</span></h6>
+      <p class="contrast">science fiction, paranormal, and fantasy romance</p>
+    </header>
+
+    <div class="w3-content">
+      <div class="w3-row">
+        <div class="w3-col s12 m6 l4 w3-padding">
+
+          <header class="w3-container w3-center">
+            <h6 class="header">New Release</h6>
+          </header>
+          <div class="w3-center">
+            <img src="https://www.elladrake.com/covers/Hightower240.jpg" alt="Hightower Affair" class="w3-theme-shadow">
+          </div>
+
+          <div class="bookcard bookdetails">
+            <h5 class="w3-margin-top">The Hightower Affair</h5>
+            <p class="w3-text-theme">Science Fiction</p>
+            <p class="w3-text-dark-grey">Novel</p>
+            <p>&nbsp;</p>
+            <p>Grab on, the world tilts</p>
+          </div>
+
+        </div>
+        <div class="w3-col s12 m6 l4 w3-padding">
+
+          <header class="w3-container w3-center">
+            <h6 class="header">Recent Release</h6>
+          </header>
+
+          <div class="w3-center">
+            <img src="covers/MoltenCoil240.jpg" alt="Molten Coil" class="w3-theme-shadow">
+          </div>
+
+          <div class="bookcard bookdetails">
+            <h5 class="w3-margin-top"><a href="books.html?title=Molten Coil">Molten Coil</a></h5>
+            <p class="w3-text-theme">Science Fiction</p>
+            <p class="w3-text-dark-grey">Novel</p>
+            <p>&nbsp;</p>
+            <p>Grab on, the world tilts</p>
+          </div>
+
+        </div>
+        <div class="w3-col s12 m6 l4 w3-padding">
+
+          <header class="w3-container w3-center">
+            <h6 class="header">Featured</h6>
+          </header>
+
+          <div class="w3-center">
+            <img src="covers/RecklessDragon2017_240.jpg" alt="Reckless Dragon" class="w3-theme-shadow">
+          </div>
+
+          <div class="bookcard bookdetails">
+            <h5 class="w3-margin-top"> Hightower Affair</h5>
+            <p class="w3-text-theme">Science Fiction</p>
+            <p class="w3-text-dark-grey">Novel</p>
+            <p>&nbsp;</p>
+            <p>Grab on, the world tilts</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="w3-content">
+        <h4 class="bebas-neue-regular">Books by Theme</h4>
+        <p>All, Alien, Alternate Dimension, Biopunk, Demon, Dragon, Elementals, Fairytale, Post-Apocalyptic, Shifter,
+          Space Opera, Space Western, Wolf</p>
+
+        <h4 class="bebas-neue-regular">Books by Genre</h4>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
