@@ -32,6 +32,20 @@ p {
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.booklist{
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+  grid-auto-flow: dense;
+}
+.thumbnail{
+  width: 125px;
+  height: 190px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 .bookcard{
   line-height: 16px;
   font-weight: 400;
@@ -40,9 +54,6 @@ p {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-.booktile{
-
 }
 
 @media only screen and (min-width: 768px) {
