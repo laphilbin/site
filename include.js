@@ -37,7 +37,6 @@ async function getBookList() {
   let myText = await myObject.text();
 
   var obj = JSON.parse(myText);
-  const decodedURL = decodeURI(xtitle);
 
   for (var i=0 ; i < obj.books.length ; i++)
   {
