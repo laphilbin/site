@@ -23,6 +23,7 @@ p {
   padding-left: 10px; 
 }
 .bookdetails p {
+  font-family: "Roboto Condensed", serif;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -36,8 +37,28 @@ p {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  
   grid-auto-flow: dense;
+}
+.spacer {
+  padding-bottom: 5px;
+}
+.booklist p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: small;
+}
+.booklist a {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
 }
 .thumbnail{
   width: 125px;
@@ -55,23 +76,27 @@ p {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
+.header {
+  font-family: "Bebas Neue", "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-condensed-300 {
+  font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.content {
+  margin: 0px 5px;
+}
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .bookcover {float: right;}
-}
-.header {
-    font-family: "Bebas Neue", "Raleway", Helvetica, Arial, sans-serif;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 0.0625em;
-  }
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.content {
-    margin: 0px 5px;
 }

@@ -10,7 +10,7 @@ async function getText(xtitle) {
       if (obj.books[i].title===decodedURL) { break; }
   }
   
-  document.getElementById("cover240").src = "covers/" + obj.books[i].cover240;
+  document.getElementById("cover240").src = "https://www.elladrake.com/covers/" + obj.books[i].cover240;
   document.getElementById("booktitle").innerHTML = obj.books[i].title;
   document.getElementById("heatlevel").innerHTML = obj.books[i].heatlevel;
   document.getElementById("length").innerHTML = obj.books[i].length;
@@ -24,6 +24,7 @@ async function getText(xtitle) {
   document.getElementById("Nook").href = "http://www.barnesandnoble.com/s/" + obj.books[i].Nook;
   document.getElementById("Kobo").href = "https://store.kobobooks.com/en-us/ebook/" + obj.books[i].Kobo;
   document.getElementById("iTune").href = "https://itunes.apple.com/us/book/" + obj.books[i].iTune;
+  document.getElementById("blurb").innerHTML = obj.books[i].blurb;
 }
 
 function getTitle(){
@@ -41,13 +42,13 @@ async function getBookList() {
 
   for (var i=0 ; i < obj.books.length ; i++)
   {
-    text += "<div class='w3-padding bookdetails'>"  
+    text += "<div class='w3-padding'>"  
     text += "<img src='https://www.elladrake.com/covers/" + obj.books[i].cover125 + "' alt='" + obj.books[i].title + "' class='thumbnail'><br>";
-    text +=  "<a href='books.html?title=" + obj.books[i].title + "'>" + obj.books[i].title + "</a><br>";
-    text +=  "<p>" + obj.books[i].series + "</p>";
-    text +=  "<br/><p class='w3-text-theme'>" + obj.books[i].genre + "</p>";
-    text +=  "<p class='w3-text-dark-grey'>" + obj.books[i].length + "</p>";
-    text +=  "<br/><p>" + obj.books[i].tagline + "</p></div>";
+    text +=  "<a href='books.html?title=" + obj.books[i].title + "'>" + obj.books[i].title + "</a>";
+    text +=  "<p class='spacer'>" + obj.books[i].series + "</p>";
+    text +=  "<p class='w3-text-theme'>" + obj.books[i].genre + "</p>";
+    text +=  "<p class='w3-text-dark-grey spacer'>" + obj.books[i].length + "</p>";
+    text +=  "<p>" + obj.books[i].tagline + "</p></div>";
   }
 
 
