@@ -31,3 +31,25 @@ function getTitle(){
   var param1 = matches[1]
   return param1;
 }
+
+async function getBookList() {
+  let myObject = await fetch("books.json");
+  let myText = await myObject.text();
+
+  var obj = JSON.parse(myText);
+  const decodedURL = decodeURI(xtitle);
+
+  for (var i=0 ; i < obj.books.length ; i++)
+  {
+        
+    text += "covers/" + obj.books[i].cover240 + "<br>";
+    text +=  obj.books[i].title + "<br>";
+    text +=  obj.books[i].length + "<br>";
+    text +=  "series:" + obj.books[i].series + "<br>";
+    text +=  obj.books[i].genre + "<br>";
+    text +=  obj.books[i].tagline + "<br>";
+  }
+
+
+  document.getElementById("list").innerHTML = text;
+}
