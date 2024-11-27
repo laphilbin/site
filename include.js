@@ -35,6 +35,7 @@ function getTitle(){
 async function getBookList() {
   let myObject = await fetch("books.json");
   let myText = await myObject.text();
+  let text = "";
 
   var obj = JSON.parse(myText);
 
