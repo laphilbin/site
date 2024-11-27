@@ -41,12 +41,13 @@ async function getBookList() {
 
   for (var i=0 ; i < obj.books.length ; i++)
   {
-    text += "<div class='w3-padding'>"  
+    text += "<div class='w3-padding bookdetails'>"  
     text += "<img src='https://www.elladrake.com/covers/" + obj.books[i].cover125 + "' alt='" + obj.books[i].title + "' class='thumbnail'><br>";
     text +=  "<a href='books.html?title=" + obj.books[i].title + "'>" + obj.books[i].title + "</a><br>";
-    text +=  obj.books[i].length + "<br>";
-    text +=  "series: " + obj.books[i].series + "<br>";
-    text +=  obj.books[i].tagline + "</div>";
+    text +=  "<p>" + obj.books[i].series + "</p>";
+    text +=  "<br/><p class='w3-text-theme'>" + obj.books[i].genre + "</p>";
+    text +=  "<p class='w3-text-dark-grey'>" + obj.books[i].length + "</p>";
+    text +=  "<br/><p>" + obj.books[i].tagline + "</p></div>";
   }
 
 

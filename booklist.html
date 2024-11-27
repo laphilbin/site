@@ -19,21 +19,29 @@
 
 <body>
     <div>
-    <!-- Navbar -->
-    <div class="w3-bar w3-theme-dark">
-        <a href="index.html" class="w3-bar-item w3-button w3-hover-theme header">LA Philbin</a>
-        <a href="booklist.html" class="w3-bar-item w3-button w3-black w3-hover-theme header">Books</a>
-        <a href="about.html" class="w3-bar-item w3-button w3-hover-theme header">About</a>
-      </div>
+        <!-- Navbar -->
+        <div class="w3-bar w3-theme-dark">
+            <a href="index.html" class="w3-bar-item w3-button w3-hover-theme header">LA Philbin</a>
+            <a href="booklist.html" class="w3-bar-item w3-button w3-black w3-hover-theme header">Books</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-hover-theme header">About</a>
+        </div>
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-48 w3-white">
+            <h1 class="w3-xxxlarge"><b>L. A. PHILBIN</b></h1>
+            <h6 class="contrast">also writing as <span class="w3-tag">ella drake</span></h6>
+            <p class="contrast">science fiction, paranormal, and fantasy romance</p>
+        </header>
 
         <div class="bookpage w3-content">
-<div class="booklist" id="list"></div>
+            <div class="w3-container w3-center">
+            <h1 class="bebas-neue-regular w3-padding">All books</h1></div>
+            <div class="booklist" id="list"></div>
 
         </div>
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding">
-    <p class="contrast">©2024. All Rights Reserved.</p>
-</footer>
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding">
+            <p class="contrast">©2024. All Rights Reserved.</p>
+        </footer>
     </div>
     <script>
         getBookList();
