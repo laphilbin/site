@@ -42,7 +42,7 @@ async function getBookList() {
 
   for (var i=0 ; i < obj.books.length ; i++)
   {
-    text += "<div class='w3-padding'>"  
+    text += "<div>"  
     text += "<img src='https://www.elladrake.com/covers/" + obj.books[i].cover125 + "' alt='" + obj.books[i].title + "' class='thumbnail'><br>";
     text +=  "<a href='books.html?title=" + obj.books[i].title + "'>" + obj.books[i].title + "</a>";
     text +=  "<p class='spacer'>" + obj.books[i].series + "</p>";
