@@ -14,10 +14,10 @@ async function getText(xtitle) {
   document.getElementById("booktitle").innerHTML = obj.books[i].title;
   document.getElementById("heatlevel").innerHTML = obj.books[i].heatlevel;
   document.getElementById("length").innerHTML = obj.books[i].length;
-  document.getElementById("series").innerHTML = "series:" + obj.books[i].series;
+  document.getElementById("series").innerHTML = "series: " + obj.books[i].series;
   document.getElementById("genre").innerHTML = obj.books[i].genre;
   document.getElementById("keyword").innerHTML = obj.books[i].keyword;
-  document.getElementById("pub").innerHTML = "published by:" + obj.books[i].pub;
+  document.getElementById("pub").innerHTML = "published by: " + obj.books[i].pub;
   document.getElementById("date").innerHTML = obj.books[i].date;
   document.getElementById("tagline").innerHTML = obj.books[i].tagline;
   document.getElementById("Amz").href = "http://www.amazon.com/dp/" + obj.books[i].Amz;
@@ -44,11 +44,11 @@ async function getBookList() {
   {
     text += "<div class='w3-padding'>"  
     text += "<img src='https://www.elladrake.com/covers/" + obj.books[i].cover125 + "' alt='" + obj.books[i].title + "' class='thumbnail'><br>";
-    text +=  "<a href='books.html?title=" + obj.books[i].title + "'>" + obj.books[i].title + "</a>";
+    text +=  "<a href='books.html?title=" + obj.books[i].title + "' class='booklist'>" + obj.books[i].title + "</a>";
     text +=  "<p class='spacer'>" + obj.books[i].series + "</p>";
-    text +=  "<p class='w3-text-theme'>" + obj.books[i].genre + "</p>";
-    text +=  "<p class='w3-text-dark-grey spacer'>" + obj.books[i].length + "</p>";
-    text +=  "<p>" + obj.books[i].tagline + "</p></div>";
+    text +=  "<p class='w3-text-theme booklist'>" + obj.books[i].genre + "</p>";
+    text +=  "<p class='w3-text-dark-grey spacer booklist'>" + obj.books[i].length + "</p>";
+    text +=  "<p class='booklist'>" + obj.books[i].tagline + "</p></div>";
   }
 
 
