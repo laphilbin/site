@@ -14,8 +14,8 @@ p {
     font-size: 1.1em;
 }
 .contrast{
-    font-family: "Source Serif 4";
-    font-weight: 300;
+  font-family: "Source Serif 4";
+  font-weight: 300;
   font-style: italic;
 }
 .bookpage {
@@ -27,10 +27,9 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.bookcover{
+.bookcover {
   width: 240px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-right: 20px;
   margin-bottom: 20px;
 }
 .booklist{
