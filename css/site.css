@@ -95,6 +95,9 @@ p {
 .content {
   margin: 0px 5px;
 }
+.navicon{
+  
+}
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .bookcover {float: right;}
