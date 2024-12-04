@@ -21,7 +21,7 @@ async function getText(xId) {
     break; 
     }
   }
-
+  document.getElementsByTagName("meta")["og:title"].content = obj.books[i].title;
   document.getElementById("cover240").src = "https://www.elladrake.com/covers/" + obj.books[i].cover240;
   document.getElementById("booktitle").innerHTML = obj.books[i].title;
   document.getElementById("heatlevel").innerHTML = obj.books[i].heatlevel;
