@@ -21,6 +21,7 @@ async function getText(xId) {
     break; 
     }
   }
+  document.querySelector('meta[name~="title"][content]').content = obj.books[i].title;
   document.querySelector('meta[property~="og:title"][content]').content = obj.books[i].title;
   document.querySelector('meta[property~="og:description"][content]').content = obj.books[i].tagline;
   document.querySelector('meta[property~="og:image"][content]').content = "https://www.elladrake.com/covers/" + obj.books[i].cover240;
