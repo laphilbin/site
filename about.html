@@ -8,7 +8,6 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/color-theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,17 +19,16 @@
 <body>
   <div>
     <!-- Navbar -->
-    <div class="w3-bar w3-theme-dark">
+    <div class="w3-bar nav-palette">
       <a href="index.html" class="w3-bar-item w3-button w3-hover-theme header">LA PHILBIN</a>
       <a href="booklist.html" class="w3-bar-item w3-button w3-hover-theme header">Books</a>
       <a href="about.html" class="w3-bar-item w3-button w3-black w3-hover-theme header">About</a>
-      <div class="w3-right">
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <label for="checkbox" class="checkbox-label">
-          <i class="fa fa-moon-o"></i>
-          <i class="fa fa-sun-o"></i>
-          <span class="ball"></span>
-        </label>
+      <div class="w3-right modeselector">
+        <select onchange="switchMode(this.value)" id="lightdark">
+          <option value="auto">◐</option>
+          <option value="light">☀</option>
+          <option value="dark">☾</option>
+        </select>
       </div>
     </div>
     <!-- Header -->
@@ -40,7 +38,7 @@
       <p class="contrast">science fiction, paranormal, and fantasy romance</p>
     </header>
 
-    <div class="w3-container w3-theme-l5 headbanner">
+    <div class="w3-container panel-theme">
         <div class="w3-content w3-padding-large">
         <p>On May 29th, 2009, my first title, Scent of Cin by Ella Drake was published by a now-closed Cobblestone Press. This was followed by releases from other small to mid-sized publishers: Ellora's Cave, Liquid Silver Books, Lyrical Press, and Samhain Publishing. These publishers closed and I have since self-published these titles. As Ella Drake, I continue to have ebooks and audio books published with Carina Press.</p>
         
@@ -56,10 +54,11 @@
 
 
 <script>
-  const checkbox = document.getElementById("checkbox")
-  checkbox.addEventListener("change", () => {
-      document.body.classList.toggle("dark")
-  })
+
+const html = document.querySelector('html');
+function switchMode(mode) {
+  html.style.setProperty("color-scheme", mode === "auto" ? "light dark" : mode);
+}
 </script>
 </body>
 

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>L.A. Philbin</title>
     <link rel="stylesheet" href="css/w3.css">
-    <link rel="stylesheet" href="css/color-theme.css">
     <link rel="stylesheet" href="css/site.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
@@ -16,10 +15,17 @@
 <body>
     <div>
         <!-- Navbar -->
-        <div class="w3-bar w3-theme-dark">
+        <div class="w3-bar nav-palette">
             <a href="index.html" class="w3-bar-item w3-button w3-hover-theme header">LA Philbin</a>
             <a href="booklist.html" class="w3-bar-item w3-button w3-black w3-hover-theme header">Books</a>
             <a href="about.html" class="w3-bar-item w3-button w3-hover-theme header">About</a>
+            <div class="w3-right modeselector">
+                <select onchange="switchMode(this.value)" id="lightdark">
+                  <option value="auto">◐</option>
+                  <option value="light">☀</option>
+                  <option value="dark">☾</option>
+                </select>
+              </div>
         </div>
         <!-- Header -->
         <header class="w3-container w3-center w3-padding-48 w3-white">
@@ -42,5 +48,10 @@
     <script>
         var xKeyword = getKeyword();
         getKeywordList(xKeyword);
+        
+const html = document.querySelector('html');
+function switchMode(mode) {
+  html.style.setProperty("color-scheme", mode === "auto" ? "light dark" : mode);
+}
     </script>
 </body>

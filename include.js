@@ -66,7 +66,7 @@ async function getBookList() {
     text += "<a href='books.html?id=" + obj.books[i].id + "'>" + obj.books[i].title + "</a>";
     text += "<p class='spacer'>" + obj.books[i].series + "</p>";
     text += "<p class='w3-text-theme'>" + obj.books[i].genre + "</p>";
-    text += "<p class='w3-text-dark-grey spacer'>" + obj.books[i].length + "</p>";
+    text += "<p class='w3-text-theme-2'>" + obj.books[i].length + "</p>";
     text += "<p class='spacer'>" + obj.books[i].tagline + "</p></div>";
   }
 
@@ -88,7 +88,7 @@ async function getKeywordList(xkeyword) {
         text += "<a href='books.html?id=" + obj.books[i].id + "'>" + obj.books[i].title + "</a>";
         text += "<p class='spacer'>" + obj.books[i].series + "</p>";
         text += "<p class='w3-text-theme'>" + obj.books[i].genre + "</p>";
-        text += "<p class='w3-text-dark-grey spacer'>" + obj.books[i].length + "</p>";
+        text += "<p class='w3-text-theme-2 spacer'>" + obj.books[i].length + "</p>";
         text += "<p class='spacer'>" + obj.books[i].tagline + "</p></div>";
       }
     }
@@ -109,7 +109,7 @@ async function getSeriesList(xseries) {
       text += "<img src='https://www.elladrake.com/covers/" + obj.books[i].cover125 + "' alt='" + obj.books[i].title + "' class='thumbnail'><br>";
       text += "<a href='books.html?id=" + obj.books[i].id + "'>" + obj.books[i].title + "</a>";
       text += "<p class='w3-text-theme'>" + obj.books[i].genre + "</p>";
-      text += "<p class='w3-text-dark-grey spacer'>" + obj.books[i].length + "</p>";
+      text += "<p class='w3-text-theme-2 spacer'>" + obj.books[i].length + "</p>";
       text += "<p class='spacer'>" + obj.books[i].tagline + "</p></div>";
     }
 

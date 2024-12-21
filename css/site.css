@@ -1,3 +1,62 @@
+html {
+  --black: #000;
+  --white: #fff;
+  --theme-light: #fefeff;
+  --theme-dark: #15191d;
+  --palette-light: #faf9fe;
+  --palette-0: #e5e2fa;
+  --palette-1: #cdc5f5;  
+  --palette-2: #b5a9f2;  
+  --palette-3: #9d8cee;  
+  --palette-4: #876eec;  
+  --palette-5: #714ee9;  
+  --palette-6: #5a3cbf;  
+  --palette-7: #442d91;  
+  --palette-8: #2f2065;  
+  --palette-9: #1c133c; 
+  --pallette-10: #0f1a2e;
+  --pallette-11: #263238;
+  
+  color-scheme: light dark;
+  
+  --background: light-dark(var(--theme-light), var(--theme-dark));
+  --navback: light-dark(var(--palette-8), var(--palette-1));
+  --panelback: light-dark(var(--palette-light), var(--pallette-10));
+  --text: light-dark(var(--black), var(--white));
+  --navtext: light-dark(var(--white), var(--black));
+}
+.w3-text-theme {color: light-dark(#7f30a1, #d39df2)}
+.w3-text-theme-2 {color: light-dark(#60247a, #e1bff6)}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#0f0441 !important}
+.w3-hover-text-theme:hover {color:#0f0441 !important}
+.w3-hover-border-theme:hover {border-color:#0f0441 !important}
+.w3-text-theme-dark {color:#4d2311 !important}
+.w3-text-theme-d1 {color:#8b3f1f !important}
+.palette-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.modeselector {
+  margin: 4px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+.nav-palette
+{
+  background-color: var(--navback);
+  color: var(--navtext);
+}
+div {
+  background-color: inherit;
+}
+.headbanner, .panel-theme {
+  background-color: var(--panelback);
+  color: var(--text);
+}
+
 #logo {
     float: left;
     width: 200px;
@@ -101,57 +160,3 @@ p {
   /* For desktop: */
   .bookcover {float: right;}
 }
-
-
-* {box-sizing: border-box;}
-
-body, header.headbanner {
-  background-color: #fff;
-  transition: background 0.2s linear;
-}
-
-body.dark, body.dark .header, body.dark .headbanner {background-color: #292c35 !important;} /* #9b59b6 */
-
-body.dark h1, body.dark h2, body.dark h6, body.dark a, body.dark p, body.dark figcaption {color: #fff !important;}
-body.dark .w3-tag {color:#000 !important; background-color:#f3d7ca !important}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.checkbox-label {
-  background-color: #cf5e2e;
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  margin-top: 5px;
-  margin-right: 15px;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.moon {color: #f1c40f;}
-
-.fa-sun {color: #f39c12;}
-
-.checkbox-label .ball {
-  background-color: #fff;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .checkbox-label .ball {
-  transform: translateX(24px);
-}
-
-
