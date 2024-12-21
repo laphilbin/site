@@ -96,6 +96,11 @@ div {
   color: var(--text);
 }
 
+.bg-white {
+  background-color: var(--panelback);
+  color: var(--text);
+}
+
 #logo {
   float: left;
   width: 200px;
@@ -222,4 +227,20 @@ p {
   .bookcover {
     float: right;
   }
+}
+.bluesky-card{
+ margin-top: 15px;
+ margin-right: 20px;
+}
+.bluesky-card header {
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+.bluesky-card img {
+    border-radius:9999px;
+    max-width: 100%;
+  height: 40px;
+  float: left;
+  margin-right: 5px;
+  padding-right: 5px;
 }
