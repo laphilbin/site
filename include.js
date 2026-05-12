@@ -39,7 +39,7 @@ async function getText(xId) {
   document.getElementById("Amz").href = "http://www.amazon.com/dp/" + obj.books[i].Amz;
   document.getElementById("Nook").href = "http://www.barnesandnoble.com/s/" + obj.books[i].Nook;
   document.getElementById("Kobo").href = "https://store.kobobooks.com/en-us/ebook/" + obj.books[i].Kobo;
-  document.getElementById("iTune").href = "https://itunes.apple.com/us/book/" + obj.books[i].iTune;
+  document.getElementById("iTune").href = "https://books.apple.com/us/book/" + obj.books[i].iTune;
   document.getElementById("blurb").innerHTML = obj.books[i].blurb;
 }
 
